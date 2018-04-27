@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title company-page
+		link(rel="stylesheet" type="text/css" href="css/style.css")
+		//- link(rel="stylesheet" type="text/css" href="css/libs.min.css")
+			
+	body
+		header.header
+			include ../header.jade
+
+		main.main
+			.container
+				include main.jade
+
+		footer.footer
+			include ../footer.jade
+
+		script(src="js/common.js")
+

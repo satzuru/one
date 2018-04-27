@@ -1,0 +1,134 @@
+.news
+	display: flex
+	justify-content: space-between
+
+	padding: 0 36px 135px 36px
+
+	flex-wrap: wrap
+	background: rgb(225, 225, 225)
+
+
+	&__item
+		overflow: hidden
+		width: 30.5%
+		background: #FFF
+		margin-top: 45px
+		font-family: 'PT Sans', sans-serif
+		font-size: 12px
+
+		&:not(:last-child)
+			margin-right: 0px
+
+	&__item-long
+		width: 65.3%
+
+	&__item-longer
+		width: 100%
+
+	&__item-header
+		display: flex
+		justify-content: space-between
+		margin: 0
+		padding-bottom: 28px
+		padding: 33px 40px 28px 20px
+		background: #FFF
+		
+		&_blue
+			background: rgb(67, 78, 114)
+			color: #FFF
+
+			.news__hashtag
+				color: #FFF
+
+	&__hashtag
+		text-align: right
+		text-transform: uppercase
+		text-decoration: none
+		color: black
+		width: 130px
+		word-wrap: break-word
+		cursor: pointer
+
+	&__item-content
+		display: block
+		text-decoration: none
+		color: black
+		cursor: pointer
+
+	&__item-title
+		margin: 0
+
+		padding: 14px 40px 0px 20px
+		font-size: 21px
+		text-transform: uppercase
+		font-family: "Pt Mono", monospace
+
+		&_size
+			padding-bottom: 48px
+
+	&__item-title_long
+		padding: 0px 40px 0px 34px
+		margin: 45px 0 32px 0
+
+	&__item-text
+		height: 88px
+
+		margin: 0
+		padding: 20px 40px 32px 20px
+		font-weight: bold	
+		overflow: hidden
+
+		line-height: 17px
+		font-size: 16px
+	
+	&__item-text_long
+		padding: 0px 40px 0px 34px
+
+		font-size: 16px
+		line-height: 17px
+		font-weight: bold	
+
+	&__item-text_bottom
+		padding-bottom: 90px
+
+	&__company-containerImg
+		display: flex
+
+		margin-top: 32px
+
+		&:last-of-type
+			padding-bottom: 82px
+
+	&__service-containerImg
+		display: flex
+
+		margin: 32px 0
+
+	&__company-img
+		margin: 0 auto
+
+	&__service-img
+		margin: 0 auto
+
+	&__item-image1
+		min-height: 191px
+		background: url("/img/news-image/sprites.png") 0px 0px no-repeat
+
+	&__item-image2,
+	&__item-image6
+		min-height: 192px
+		background: url("/img/news-image/sprites.png") -650px -200px no-repeat
+
+	&__item-image3
+		min-height: 192px
+		background: url("/img/news-image/sprites.png") 0px -201px no-repeat
+
+	&__item-image4
+		min-height: 193px
+		background: url("/img/news-image/sprites.png") -650px 0px no-repeat
+
+	&__item-image5
+		min-height: 192px
+		background: url("/img/news-image/sprites.png") -300px 0px no-repeat
+	
+	

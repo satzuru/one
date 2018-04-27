@@ -1,0 +1,72 @@
+.footer
+	min-height: 142px
+	background: rgb(70, 93, 88)
+
+	&__wrapper
+		padding: 30px 50px 27px 80px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		font-family: "PT-sans", sans-serif
+		font-size: 12px
+		text-transform: uppercase
+
+	&__menu
+		flex-wrap: wrap
+		padding: 0
+		margin: 0
+		list-style: none
+
+	&__item
+		max-width: 100%
+		margin-bottom: 12px
+
+		&:last-child
+			margin-bottom: 0
+
+		&:hover .footer__link
+			padding-bottom: 2px
+			border-bottom: 2px solid rgb(228, 225, 214)
+			border-bottom: 2px solid rgb(105, 132, 128)
+
+	&__link
+		text-decoration: none
+		color: rgb(228, 225, 214)
+
+	&__social
+		display: flex
+		align-self: flex-end
+
+	&__social-link
+		width: 39px
+		height: 39px
+		margin-right: 14px
+
+		&:last-of-type
+			margin-right: 0
+
+		&:hover
+			box-shadow: 0 0 5px 0 black inset
+			border-radius: 10px
+
+	&__button
+		color: black
+		text-decoration: none
+		align-self: flex-end
+		padding: 15px 36px 13px 32px
+		background: rgb(228, 225, 214)
+		text-align: center
+
+		&:active
+			box-shadow: 0 0 5px 0px black inset
+
+
+	&__social-link_img1
+		background: url(/img/news-image/sprites.png) -1000px 0 no-repeat
+
+	&__social-link_img2
+		background: url(/img/news-image/sprites.png) -1050px 0 no-repeat
+
+	&__social-link_img3
+		background: url(/img/news-image/sprites.png) -1100px 0 no-repeat
+

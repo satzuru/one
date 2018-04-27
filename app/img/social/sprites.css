@@ -1,0 +1,112 @@
+.fb-30, .ig-30, .vk-30, .fb-40, .ig-40, .vk-40, .fb-50, .ig-50, .fb-60, .ig-60, .vk-60, .fb-70, .ig-70, .vk-70, .fb-80, .ig-80, .vk-80, .vk-50{
+	background: url(sprites.png) no-repeat;
+}
+
+.fb-30{
+	background-position: 0 0;
+	width: 30px;
+	height: 30px;
+}
+
+.ig-30{
+	background-position: 0 -150px ;
+	width: 30px;
+	height: 30px;
+}
+
+.vk-30{
+	background-position: 0 -300px ;
+	width: 30px;
+	height: 30px;
+}
+
+.fb-40{
+	background-position: -50px 0;
+	width: 40px;
+	height: 40px;
+}
+
+.ig-40{
+	background-position: -50px -150px ;
+	width: 40px;
+	height: 40px;
+}
+
+.vk-40{
+	background-position: -50px -300px ;
+	width: 40px;
+	height: 40px;
+}
+
+.fb-50{
+	background-position: -100px 0;
+	width: 50px;
+	height: 50px;
+}
+
+.ig-50{
+	background-position: -100px -150px ;
+	width: 50px;
+	height: 50px;
+}
+
+.fb-60{
+	background-position: -200px 0;
+	width: 60px;
+	height: 60px;
+}
+
+.ig-60{
+	background-position: -200px -150px ;
+	width: 60px;
+	height: 60px;
+}
+
+.vk-60{
+	background-position: -200px -300px ;
+	width: 60px;
+	height: 60px;
+}
+
+.fb-70{
+	background-position: -300px 0;
+	width: 70px;
+	height: 70px;
+}
+
+.ig-70{
+	background-position: -300px -150px ;
+	width: 70px;
+	height: 70px;
+}
+
+.vk-70{
+	background-position: -300px -300px ;
+	width: 70px;
+	height: 70px;
+}
+
+.fb-80{
+	background-position: -400px 0;
+	width: 80px;
+	height: 80px;
+}
+
+.ig-80{
+	background-position: -400px -150px ;
+	width: 80px;
+	height: 80px;
+}
+
+.vk-80{
+	background-position: -400px -300px ;
+	width: 80px;
+	height: 80px;
+}
+
+.vk-50{
+	background-position: -100px -300px ;
+	width: 50px;
+	height: 50px;
+}
+

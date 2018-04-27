@@ -1,0 +1,175 @@
+//- .news
+//- 	.news__item
+//- 		.news__item-header
+//- 			datetime.news__datetime 22.03.2017
+//- 			a(href="#").news__hashtag #события 
+
+//- 		a(href="#").news__item-content
+//- 			h2.news__item-title Акция "Дайте два"
+
+//- 			p.news__item-text Фирма 1С объявляет о проведении акции "Дайте два!", которая  будет действовать до конца марта. Оплатите сервис 1С-UMI на год или  больше,создайте второй сайт бесплатно на любом тарифе - и акция "Дайте два!" подарит вам половину переведенной суммы.
+
+//- 	.news__item
+//- 		.news__item-header
+//- 			datetime.news__datetime 09.06.2017
+//- 			a(href="news-page.html").news__hashtag #новости компании
+
+//- 		a(href="#").news__item-content
+//- 			h2.news__item-title Семинар
+
+//- 			p.news__item-text Демонстрация возможностей комплекса программ «1С: Производственная безопасность" Семинар предназначен для Компаний среднего и крупного бизнеса любой отрасли, для руководителей и директоров компаний, начальников отдела по охране окружающей среды и  техники безопасности
+		
+//- 	.news__item
+//- 		.news__item-header
+//- 			datetime.news__datetime 22.03.2018
+//- 			a(href="#").news__hashtag #события
+
+//- 		a(href="#").news__item-content
+//- 			h2.news__item-title.news__item-title_size заголовок новости
+//- 			.news__item-image1
+
+//- 	.news__item
+//- 		.news__item-header.news__item-header_blue
+//- 			datetime.news__datetime 22.03.2018
+//- 			a(href="#").news__hashtag #реклама
+
+//- 		a(href="#").news__item-content
+//- 			h2.news__item-title.news__item-title_size реклама
+//- 			.news__item-image2
+
+//- 	.news__item.news__item-long
+//- 		.news__item-header
+//- 			datetime.news__datetime 22.03.2018
+//- 			a(href="free-page.html").news__hashtag #бесплатно
+
+//- 		a(href="#").news__item-content
+//- 			h2.news__item-title.news__item-title_size что-то бесплатное
+//- 			.news__item-image3
+
+//- 	.news__item
+//- 		.news__item-header
+//- 			datetime.news__datetime 22.03.2018
+//- 			a(href="#").news__hashtag #события
+
+//- 		a(href="#").news__item-content
+//- 			h2.news__item-title.news__item-title_size заголовок новости
+//- 			.news__item-image4
+
+//- 	.news__item
+//- 		.news__item-header
+//- 			datetime.news__datetime 23.05.2017
+//- 			a(href="news-page.html").news__hashtag #новости компании
+
+//- 		a(href="#").news__item-content
+//- 			h2.news__item-title Курс-практикум
+//- 			p.news__item-text Практическое использование информационной системы "ИТС ПРОФ" <br>Курс предназначен для пользователей программ системы "1С:Предпритяие", которые ведут бухгалтерский, налоговый и кадровый учет в программах
+
+//- 	.news__item
+//- 		.news__item-header
+//- 			datetime.news__datetime 22.03.2018
+//- 			a(href="#").news__hashtag #события
+		
+//- 		a(href="#").news__item-content
+//- 			h2.news__item-title.news__item-title_size заголовок новости
+//- 			.news__item-image5
+
+//- 	.news__item
+//- 		.news__item-header
+//- 			datetime.news__datetime 01.12.2009
+//- 			a(href="#").news__hashtag #события
+
+//- 		a(href="#").news__item-content
+//- 			h2.news__item-title удаленная помощь
+//- 			p.news__item-text У вас возникли сложности и специалист может подъехать только завтра? <br> Тогда эта услуга для вас: удаленное администрирование и помощь в решении проблем, обновление платформы конфигурации и составление отчетности.
+
+//- 	.news__item
+//- 		.news__item-header.news__item-header_blue
+//- 			datetime.news__datetime 22.03.2018
+//- 			a(href="#").news__hashtag #реклама
+		
+//- 		a(href="#").news__item-content
+//- 			h2.news__item-title.news__item-title_size реклама
+//- 			.news__item-image6
+
+//- 	.news__item
+//- 		.news__item-header
+//- 			datetime.news__datetime 27.01.2015
+//- 			a(href="#").news__hashtag #события
+
+//- 		a(href="#").news__item-content
+//- 			h2.news__item-title акция "скан-архив"
+//- 			p.news__item-text Уважаемые клиенты! <br> Только до 01.03.2015 г. Компания ИНСПРО предлагает бесплатную установку и консультации по работе с программой «Скан-Архив» базовый.
+
+
+mixin news-item(long, mod, date, hashtag)
+	.news__item(class= long)
+		.news__item-header(class= mod)
+			datetime.news__datetime= date
+
+			case hashtag
+				when "#новости компании"
+					a(href="news-page.html").news__hashtag= hashtag
+
+				default
+					a(href="#").news__hashtag= hashtag
+
+		a(href="#").news__item-content
+			block
+
+
+.news
+	+news-item('', '', "22.03.2017", "#события")
+
+		h2.news__item-title акция "дайте два"
+		p.news__item-text Фирма 1С объявляет о проведении акции "Дайте два!", которая  будет действовать до конца марта. Оплатите сервис 1С-UMI на год или  больше,создайте второй сайт бесплатно на любом тарифе - и акция "Дайте два!" подарит вам половину переведенной суммы.
+
+	+news-item('', '', "09.06.2017", "#новости компании")
+
+		h2.news__item-title Семинар
+		p.news__item-text Демонстрация возможностей комплекса программ «1С: Производственная безопасность" Семинар предназначен для Компаний среднего и крупного бизнеса любой отрасли, для руководителей и директоров компаний, начальников отдела по охране окружающей среды и  техники безопасности
+	
+	+news-item('', '', "22.03.2018", "#события")
+
+		h2.news__item-title.news__item-title_size заголовок новости
+		.news__item-image1
+
+	+news-item('', 'news__item-header_blue', "22.03.2018", "#реклама")
+
+		h2.news__item-title.news__item-title_size реклама
+		.news__item-image2
+	
+	+news-item('news__item-long', '', "22.03.2018", "#бесплатно")
+
+		h2.news__item-title.news__item-title_size что-то бесплатное
+		.news__item-image3
+	
+	+news-item('', '', "22.03.2018", "#события")
+
+		h2.news__item-title.news__item-title_size заголовок новости
+		.news__item-image4
+
+	+news-item('', '', "23.05.2017", "#новости компании")
+
+		h2.news__item-title Курс-практикум
+		p.news__item-text Практическое использование информационной системы "ИТС ПРОФ" <br>Курс предназначен для пользователей программ системы "1С:Предпритяие", которые ведут бухгалтерский, налоговый и кадровый учет в программах
+
+	+news-item('', '', "22.03.2018", "#события")
+
+		h2.news__item-title.news__item-title_size заголовок новости
+		.news__item-image5
+
+	+news-item('', '', "01.12.2009", "#события")
+
+		h2.news__item-title удаленная помощь
+		p.news__item-text У вас возникли сложности и специалист может подъехать только завтра? <br> Тогда эта услуга для вас: удаленное администрирование и помощь в решении проблем, обновление платформы конфигурации и составление отчетности.
+
+	+news-item('', 'news__item-header_blue', "22.03.2018", "#реклама")
+
+		h2.news__item-title.news__item-title_size реклама
+		.news__item-image6
+	
+	+news-item('', '', "27.01.2015", "#события")
+
+		h2.news__item-title акция "скан-архив"
+		p.news__item-text Уважаемые клиенты! <br> Только до 01.03.2015 г. Компания ИНСПРО предлагает бесплатную установку и консультации по работе с программой «Скан-Архив» базовый.
+		
